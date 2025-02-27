@@ -12,17 +12,17 @@ import random
 
 # Запрос значений для каждого флага
 print(f"Введение значений:")
-# is_Subscribed = bool(int(input("Является ли пользователь подписчиком? (1 - True, 0 - False): ")))
-# is_Adult = bool(int(input("Является ли пользователь совершеннолетним? (1 - True, 0 - False): ")))
-# is_Admin = bool(int(input("Является ли пользователь администратором? (1 - True, 0 - False): ")))
-# is_Blocked = bool(int(input("Заблокирован ли пользователь? (1 - True, 0 - False): ")))
-#
-# # Вывод введенных значений для проверки
-# print(f"Введенные значения: Подписка: {is_Subscribed}, Совершеннолетие: {is_Adult}, Админ: {is_Admin}, Блокировка: {is_Blocked}")
+is_Subscribed = bool(int(input("Является ли пользователь подписчиком? (1 - True, 0 - False): ")))
+is_Adult = bool(int(input("Является ли пользователь совершеннолетним? (1 - True, 0 - False): ")))
+is_Admin = bool(int(input("Является ли пользователь администратором? (1 - True, 0 - False): ")))
+is_Blocked = bool(int(input("Заблокирован ли пользователь? (1 - True, 0 - False): ")))
+
+# Вывод введенных значений для проверки
+print(f"Введенные значения: Подписка: {is_Subscribed}, Совершеннолетие: {is_Adult}, Админ: {is_Admin}, Блокировка: {is_Blocked}")
 
 # #Рандомная генерация чисел для задачи
-is_Subscribed, is_Adult, is_Admin, is_Blocked = random.choice([True, False]), random.choice([True, False]), random.choice([True, False]), random.choice([True, False])
-print(f"Введенные значения: Подписка: {is_Subscribed}, Совершеннолетие: {is_Adult}, Админ: {is_Admin}, Блокировка: {is_Blocked}")
+# is_Subscribed, is_Adult, is_Admin, is_Blocked = random.choice([True, False]), random.choice([True, False]), random.choice([True, False]), random.choice([True, False])
+# print(f"Введенные значения: Подписка: {is_Subscribed}, Совершеннолетие: {is_Adult}, Админ: {is_Admin}, Блокировка: {is_Blocked}")
 
 if is_Blocked:
     # Если пользователь заблокирован, доступ запрещен

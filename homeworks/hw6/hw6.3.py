@@ -11,15 +11,15 @@ import random
 # (вместо точек нужно сделать приведение типа)
 # - Вывести, есть ли у пользователя доступ по введенным значениям
 
-# is_Login_Correct = bool(int(input("Введите значение is_Login_Correct (1 - True, 0 - False): ")))
-# is_Password_Correct = bool(int(input("Введите значение is_Password_Correct (1 - True, 0 - False): ")))
-# is_Admin = bool(int(input("Введите значение is_Admin (1 - True, 0 - False): ")))
-#
-# print(f"Введенные значения: is_Login_Correct = {is_Login_Correct}, is_Password_Correct = {is_Password_Correct}, is_Admin = {is_Admin}")
+is_Login_Correct = bool(int(input("Введите значение is_Login_Correct (1 - True, 0 - False): ")))
+is_Password_Correct = bool(int(input("Введите значение is_Password_Correct (1 - True, 0 - False): ")))
+is_Admin = bool(int(input("Введите значение is_Admin (1 - True, 0 - False): ")))
+
+print(f"Введенные значения: is_Login_Correct = {is_Login_Correct}, is_Password_Correct = {is_Password_Correct}, is_Admin = {is_Admin}")
 
 # #Рандомная генерация чисел для задачи
-is_Login_Correct, is_Password_Correct, is_Admin = random.choice([True, False]), random.choice([True, False]), random.choice([True, False])
-print(f"Введенные значения: is_Login_Correct = {is_Login_Correct}, is_Password_Correct = {is_Password_Correct}, is_Admin = {is_Admin}")
+# is_Login_Correct, is_Password_Correct, is_Admin = random.choice([True, False]), random.choice([True, False]), random.choice([True, False])
+# print(f"Введенные значения: is_Login_Correct = {is_Login_Correct}, is_Password_Correct = {is_Password_Correct}, is_Admin = {is_Admin}")
 
 if is_Admin:
     # Если пользователь является администратором, доступ разрешен
