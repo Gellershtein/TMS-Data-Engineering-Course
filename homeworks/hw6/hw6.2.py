@@ -19,7 +19,7 @@ while True:
     except ValueError:
         print("Введите трёхзначное число")
 
-# #Рандомная генерация чисел для задачи
+# #Рандомная генерация числа для задачи
 #
 # three_digit_number = int (random.randint(100, 999))
 # print(f"Введенное трёхзначное число: {three_digit_number}")
