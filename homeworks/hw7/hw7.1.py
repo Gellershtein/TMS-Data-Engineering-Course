@@ -32,7 +32,7 @@ array_str = sys.argv[1]
 array = array_str.split(',')
 array = [int(x) for x in array] # Преобразование данных через цикл
 
-print(f"Введенный масив {array}")
+print(f"Введенный массив {array}")
 
 # Вариант 1. Через match
 for num in array:
