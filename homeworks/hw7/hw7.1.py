@@ -46,6 +46,7 @@ for num in array:
             print(f_data + " - Большое")
 
 print("-----------------------------------------")
+
 # Вариант 2. Упрощенный вариант через тернарный оператор
 for num in array:
     classification = (
