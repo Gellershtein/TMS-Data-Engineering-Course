@@ -92,6 +92,7 @@ match number:
 # | - or, или
 # & - and, и
 # ~ - not, не
+# ^ - not or
 
 a = 5 # 101
 b = 3 # 011
