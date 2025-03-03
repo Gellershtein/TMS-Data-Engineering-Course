@@ -16,9 +16,9 @@ array = [int(x) for x in array] # Преобразование данных че
 
 print(f"Введенный массив {array}")
 
-min = array[0]
+min_num = array[0]
 for num in array:
-    if num < min:
-        min = num
+    if num < min_num:
+        min_num = num
 
-print(f"Минимальное значение: {min}")
+print(f"Минимальное значение: {min_num}")
