@@ -30,6 +30,9 @@ import os
 
 # Поднимаемся на два уровня вверх (из 'hw7' → 'homeworks' → 'TMS-Data-Engineering-Course')
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+# os.path.dirname(__file__) — возвращает путь к текущему файлу (hw7.1.py).
+# os.path.join(..., '../..') — поднимаемся на два уровня вверх (из hw7 в TMS-Data-Engineering-Course).
+# sys.path.append(...) — добавляем этот путь в список директорий Python.
 
 from utils.array_check import ArrayCheck
 
