@@ -8,12 +8,14 @@
 # Минимальное значение: 5
 
 import sys
+import os
 
-array_str = sys.argv[1]
+# Поднимаемся на два уровня вверх (из 'hw7' → 'homeworks' → 'TMS-Data-Engineering-Course')
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
-array = array_str.split(',')
-array = [int(x) for x in array] # Преобразование данных через цикл
+from utils.array_check import ArrayCheck
 
+array = ArrayCheck.array_input_check(1)
 print(f"Введенный массив {array}")
 
 min_num = array[0]

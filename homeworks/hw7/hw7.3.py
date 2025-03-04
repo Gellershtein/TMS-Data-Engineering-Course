@@ -17,16 +17,16 @@
 # Общих элементов нет
 
 import sys
+import os
 
-array_str = sys.argv[1]
-array1 = array_str.split(',')
-array1 = [int(x) for x in array1] # Преобразование данных через цикл
-print(f"Первый введенный массив {array1}")
+# Поднимаемся на два уровня вверх (из 'hw7' → 'homeworks' → 'TMS-Data-Engineering-Course')
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
-array_str = sys.argv[2]
-array2 = array_str.split(',')
-array2 = [int(x) for x in array2] # Преобразование данных через цикл
-print(f"Второй введенный массив {array2}")
+from utils.array_check import ArrayCheck
+
+array1 = ArrayCheck.array_input_check(1)
+array2 = ArrayCheck.array_input_check(2)
+print(f"Первый введенный массив {array1} \nВторой введенный массив {array2}")
 
 #Вариант 1: Решение через массивы
 found = False
