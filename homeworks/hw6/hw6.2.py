@@ -30,6 +30,6 @@ two_digit_number = (three_digit_number%100)
 second_digit = two_digit_number//10
 third_digit = two_digit_number % 10
 print(f"Разложение числа: {three_digit_number} на разряды: первый разряд = {first_digit} второй разряд = {second_digit}  трейтий разряд = {third_digit}")
-three_digit_numbers_sum = MathUtils.sum(MathUtils.sum(first_digit, second_digit), third_digit)
-three_digit_numbers_multipling = MathUtils.multiply(MathUtils.multiply(first_digit, second_digit), third_digit)
+three_digit_numbers_sum = MathUtils.sum(first_digit, second_digit, third_digit)
+three_digit_numbers_multipling = MathUtils.multiply(first_digit, second_digit, third_digit)
 print(f"Вычисляем сумму и произведение цифр трёхзначного числа {three_digit_number}, Сумма чисел = {three_digit_numbers_sum}, Произведение чисел = {three_digit_numbers_multipling}")
